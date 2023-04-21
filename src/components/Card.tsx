@@ -4,6 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { CardsProps } from '../data/cards';
 
+const HEIGHT = 75;
+const MARGIN_BOTTOM = 5;
+export const CARD_HEIGHT: number = HEIGHT + MARGIN_BOTTOM;
+
 type CardProps = {
   data: CardsProps;
 };
@@ -24,7 +28,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: 20,
     borderRadius: 10,
-    marginVertical: 5,
     backgroundColor: '#444444',
   },
   title: {
